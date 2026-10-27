@@ -1,0 +1,131 @@
+.identify-page {
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.identify-box {
+  width: 100%;
+  max-width: 850px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.identify-box h2 {
+  font-size: 2.3rem;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+}
+
+.identify-subtitle {
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+/* Upload button */
+.custom-upload-btn {
+  display: inline-block;
+  padding: 12px 22px;
+  border-radius: 14px;
+  cursor: pointer;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.08);
+  transition: 0.2s;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.custom-upload-btn:hover {
+  background: rgba(0, 0, 0, 0.15);
+}
+
+/* Hide default file input */
+.custom-upload-btn input {
+  display: none;
+}
+
+/* File name */
+.file-name {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: var(--muted);
+}
+
+/* Preview container */
+.preview-container {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Preview image */
+.preview-image {
+  width: 100%;
+  max-width: 650px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+}
+
+/* Scanner line (only on image) */
+.scanner-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 650px;
+  height: 4px;
+  background: limegreen;
+  animation: scan 2s linear infinite;
+  border-radius: 5px;
+}
+
+/* Scanner animation */
+@keyframes scan {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 330px;
+  }
+}
+
+/* Identify button */
+.identify-btn {
+  margin-top: 30px;
+  width: 230px;
+  padding: 12px;
+  border: none;
+  border-radius: 14px;
+  background: var(--green);
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.identify-btn:hover {
+  background: var(--green-dark);
+}
+
+.identify-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.custom-upload-btn input:disabled {
+  pointer-events: none;
+}

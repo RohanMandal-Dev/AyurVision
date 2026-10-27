@@ -1,0 +1,91 @@
+.result-page {
+  min-height: 85vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-box {
+  width: 100%;
+  max-width: 950px;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(14px);
+  padding: 40px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.result-box h2 {
+  font-size: 2.3rem;
+  color: var(--green-dark);
+  margin-bottom: 10px;
+}
+
+.result-prob {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: var(--muted);
+  margin-bottom: 25px;
+}
+
+.result-name {
+  font-size: 1.7rem;
+  color: var(--green-dark);
+  margin-bottom: 15px;
+}
+
+.result-box p {
+  margin-bottom: 12px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/* Message for non ayurvedic */
+.not-available {
+  margin-top: 20px;
+  font-weight: bold;
+  color: red;
+}
+
+/* Buttons Row */
+.result-btn-row {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* Save button */
+.save-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 14px;
+  background: var(--green);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 220px;
+}
+
+.save-btn:hover {
+  background: var(--green-dark);
+}
+
+/* Back button */
+.back-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 14px;
+  background: rgba(0, 0, 0, 0.08);
+  font-weight: bold;
+  cursor: pointer;
+  width: 220px;
+  transition: 0.2s;
+}
+
+.back-btn:hover {
+  background: rgba(0, 0, 0, 0.15);
+}

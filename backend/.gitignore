@@ -1,0 +1,18 @@
+# Keep API credentials private
+config/secrets.php
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Private uploads
+uploads/
+
+# Temporary files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
